@@ -1,0 +1,33 @@
+section{
+      width: 100vw;
+}
+/*---------------------- cards-------------- */
+h1{
+      text-align: center;
+      font-family:"Press Start 2p"
+}
+a{
+      text-decoration: none;
+      color: black;
+      width: min-content;
+}
+#home {
+      display:flex;
+      flex-wrap: wrap;
+}
+.commandCard{
+      width: 25%;
+      min-width: 300px;
+}
+.cardImg{
+      min-width:300px;
+      width: 25%;
+}
+h2{
+      width: fit-content;
+}
+
+/* --------------------Command descriptions ----------------------------------*/
+.backToTop img{
+      width:100px
+}
