@@ -6,8 +6,11 @@
       <title>Github commands</title>
       <link rel="stylesheet" href="style.css">
       <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=Press+Start+2P&display=swap" rel="stylesheet">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=Press+Start+2P&display=swap" rel="stylesheet">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
  <header>
@@ -21,71 +24,93 @@
             </a>
       </article>
       <article class="commandCard">
-            <a href="#commit">
-                  <img class="cardImg" src="./assets/git-commit-svgrepo-com.svg" alt="Git commit image">
-                  <h2>Git commit</h2>
+               <img class="cardImg" src="./assets/git-commit-svgrepo-com.svg" alt="Git commit image">
+            <a href="#commit">    
+               <h2>Git commit</h2>
             </a>
       </article>
       <article class="commandCard">
-           <a href="#pull">
-                  <img class="cardImg" src="./assets/git-pull-request-svgrepo-com (1).svg" alt="Git pull image">
+         <img class="cardImg" src="./assets/git-pull-request-svgrepo-com (1).svg" alt="Git pull image" >  
+          <a href="#pull">                  
                   <h2>Git pull</h2>
             </a> 
       </article>
       <article class="commandCard">
+           <img class="cardImg" src="./assets/git-push.svg" alt="Git clone image">
             <a href="#push">
-                  <img class="cardImg" src="./assets/git-push.svg" alt="Git clone image">
                   <h2>Git push</h2>
             </a>
       </article>
  </section>
- <section id="clone">
+ <section id="clone" >
       <h3>Clone</h3>
-             <p class="description">
-                  Running this code allows you to run a local copy of a repositry and syncs them.
-             </p>
-             <P>You clone a repository by copying the link to the repository and pasting it after typing git clone like so: <code>git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY</code></P>
-             <p class="explanation">
-                  You can clone a repository from GitHub.com to your local computer, or to a codespace, to make it easier to fix merge conflicts, add or remove files, and push larger commits. When you clone a repository, you copy the repository from GitHub.com to your local machine, or to a remote virtual machine when you create a codespace. For more information about cloning to a codespace, see Creating a codespace for a repository.
-            </p>
-             <p class="explanation">
+      <div class="grid">
+          <div class="summary">
+                <p >
+                Running this code allows you to run a local copy of a repositry and syncs them.
+                </p>
+          </div>
+          <div class="syntax">
+               <P>To use this command copy the link to the repository and paste it after typing git Clone: </P>
+               <code>git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY</code>
+          </div>
+          <div class="description">
+               <p>
                   Cloning a repository pulls down a full copy of all the repository data that GitHub.com has at that point in time, including all versions of every file and folder for the project. You can push your changes to the remote repository on GitHub.com, or pull other people's changes from GitHub.com. For more information, see Using Git.
              </p>
-             <p class="explanation">
-                  You can clone your existing repository or clone another person's existing repository to contribute to a project.
-             </p>
-             <div class="backToTop">
-                  <a href="#home"><img src="./assets/up-svgrepo-com.svg" alt="back to top"></a>
-             </div>
+          </div>
+      </div>
  </section>
  <section id="commit">
       <h3>Commit</h3>
-             <p class="description"> Running this will record changes you made, when they were made and by who. </p>
-             <p>To use commit type git commit -m"" then put the message in the in the quotation marks: <code>git commit -m "update the README.md with link to contributing guide"</code> </p>
-             <p class="explanation">When you make a commit, you must include a commit message that briefly describes the changes.</p>
-             <p class="explanation">If the repository you are committing to has compulsory commit signoffs enabled, and you are committing via the web interface, you will automatically sign off on the commit as part of the commit process.</p>
-             <div class="backToTop">
-                  <a href="#home"><img src="./assets/up-svgrepo-com.svg" alt="back to top"></a>
-             </div>
+      <div class="grid">
+          <div class="summary">
+               <p> Records what changes were made, when they were made and by who.</p>
+          </div>
+          <div class="syntax">
+               <p>To use commit type git commit -m"" then explain changes made in the quotation marks:</p>
+               <code>git commit -m "updated the README.md with link to contributing guide"</code>
+          </div>
+          <div class="description">
+               <p class="explanation">When you make a commit, you must include a commit message that briefly describes the changes.</p>
+          </div>
+      </div>       
  </section>
  <section id="pull">
       <h3>Pull</h3>
-             <p class="description">Allows you to automatically update your local repo with the content of the remoter repository</p>
-             <p>To update your local repository, all you have to do is type git pull in the terminal you are working on: <code>git pull</code></p>
-             <p class="explanation">The git pull command first runs git fetch which downloads content from the specified remote repository. Then a git merge is executed to merge the remote content refs and heads into a new local merge commit.</p>
-             <div class="backToTop">
-                  <a href="#home"><img src="./assets/up-svgrepo-com.svg" alt="back to top"></a>
-             </div>
+      <div class="grid">
+          <div class="summary">
+               <h4>Summary on command</h4>
+               <p class="description">Allows you to automatically update your local repo with the content of the remote repository</p>
+          </div>
+          <div class="syntax">
+               <h4>How to use it</h4>
+               <p>To use this command type git pull in the terminal you are working on and press enter</p>
+               <code>git pull</code>
+          </div>
+          <div class="description">
+               <h4>More on the command</h4>
+               <p >The git pull command first runs git fetch which downloads content from the specified remote repository. Then a git merge is executed to merge the remote content refs and heads into a new local merge commit.</p>
+          </div>             
+      </div>      
  </section>
  <section id="push">
       <h3>Push</h3>
-             <p class="description">Updates the main repository with the changes made on a local one.</p>
-             <p>The gir push command accepts two arguments, the remote name and the branch name: <code>git push REMOTE-NAME BRANCH-NAME</code></p>
-             <p class="explanation">After you make and commit changes locally, you can share them with the remote repository using git push. Pushing changes to the remote makes your commits accessible to others who you may be collaborating with. This will also update any open pull requests with the branch that you're working on.</p>
-             <p class="explanation">As best practice, it's important to run the git pull command before you push any new changes to the remote branch. This will update your local branch with any new changes that may have been pushed to the remote from other contributors. Pulling before you push can reduce the amount of merge conflicts you create on GitHub – allowing you to resolve them locally before pushing your changes to the remote branch.</p>
-             <div class="backToTop">
-                  <a href="#home"><img src="./assets/up-svgrepo-com.svg" alt="back to top"></a>
-             </div>            
- </section>    
+      <div class="grid">
+          <div class="summary">
+               <p >Updates the main repository with the changes made on a local one.</p>
+          </div>
+          <div class="syntax">
+               <p>The git push command accepts two arguments, the remote name and the branch name:</p>
+               <code>git push REMOTE-NAME BRANCH-NAME</code>
+          </div>
+          <div class="description">
+            <p>After you make and commit changes locally, you can share them with the remote repository using git push. Pushing changes to the remote makes your commits accessible to others who you may be collaborating with. This will also update any open pull requests with the branch that you're working on.</p>   
+          </div> 
+     </div> 
+ </section> 
+<div class="top">
+     <a href="#home">&#8962;</a>
+</div>   
 </body>
 </html>
