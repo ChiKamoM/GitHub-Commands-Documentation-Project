@@ -1,3 +1,7 @@
+*{
+      box-sizing: border-box;
+}
+
 body{
       background-color: #dedeff;
 }
@@ -5,7 +9,6 @@ code{
       background-color: #dedeff;
 }
 section{
-      width: 100vw;
       margin-top: 50px;
       margin-bottom: 50px;
 }
